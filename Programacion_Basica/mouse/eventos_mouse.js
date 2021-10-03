@@ -9,7 +9,7 @@ function dibujarPunto(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 {
     lienzo.beginPath();
     lienzo.strokeStyle = color;
-    lienzo.lineWidth = 4;
+    lienzo.lineWidth = 2;
     lienzo.moveTo(xinicial, yinicial);
     lienzo.lineTo(xfinal, yfinal);
     lienzo.stroke();
@@ -28,7 +28,7 @@ function dibujarMouse(evento)
     var y = evento.y;
     if(estado == 1)
         {
-            dibujarPunto(colorcito, x-1, y-1, x+1, y+1, papel);
+            dibujarPunto(colorcito, x, y, x+1, y+1, papel);
         }
 }
 
